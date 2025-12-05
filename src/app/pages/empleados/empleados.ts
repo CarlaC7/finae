@@ -1,5 +1,6 @@
+import { Component, inject, OnInit } from '@angular/core';
+import { ApiService } from '../../services/empleado';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
 
 @Component({
   selector: 'app-empleados',
@@ -10,20 +11,18 @@ import { Component, inject } from '@angular/core';
 export class Empleados {
 
   public dataEmpleados: any;
-  public totalEmpleados: number = 6;
+  public totalEmpleados: number = 0;
   private httpClient = inject(HttpClient);
-  constructor() {}
+  
+  constructor(){}
 
-  ngOnInit() {
-    this.getEmpleados();
-  }
-
-  getEmpleados(){
-    this.httpClient.get("https://empresas-2e93a-default-rtdb.firebaseio.com/.json").subscribe(data => {
-      this.dataEmpleados = data;
+  ngOnInit(): void {
+    this.httpClient.get("https://finald-d1884-default-rtdb.firebaseio.com/.json").subscribe(data => {
+      this.dataEmpleados = DataTransfer;
       this.totalEmpleados = Object.keys(data).length;
       console.log(data);
-    })
+    
+    });
   }
 
 }

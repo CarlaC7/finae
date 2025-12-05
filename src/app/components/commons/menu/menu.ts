@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './menu.css',
 })
 export class Menu {
-    toggleTheme() {
-  document.body.classList.toggle('dark-mode');
-}}
+
+}

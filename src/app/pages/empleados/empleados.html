@@ -1,0 +1,33 @@
+<app-header></app-header>
+<app-menu></app-menu>
+<h1>Lista de Empleados</h1>
+<table>
+    <tr>
+        
+    <li>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Trabajo</th>
+      <th>Salario</th>
+      <th>Email</th>
+      <th>Extra</th>
+    </li>
+    
+    </tr>
+  @for (row of dataEmpleados; track $index) {
+  
+    <tr>
+      <td>{{ row.id}}</td>
+      <td>{{ row.nombre }}</td>
+      <td>{{ row.edad }}</td>
+      <td>{{ row.trabajo }}</td>
+      <td>{{ row.salario }}</td>
+      <td>{{ row.gmail }}</td>
+      <td>{{ row.extra }}</td>
+    </tr>
+}
+</table>
+<h3>Total Empleados:{{totalEmpleados}}</h3>
+
+<app-footer></app-footer>

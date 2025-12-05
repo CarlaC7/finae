@@ -1,0 +1,90 @@
+/* Contenedor principal */
+.inicio-container {
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HERO - Sección de bienvenida */
+.hero {
+  background: linear-gradient(135deg, #5c3a3a, #61422b);
+  padding: 60px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 15px;
+}
+
+/* Tarjeta de información */
+.info-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.info-card h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.info-card p {
+  font-size: 1.1rem;
+  text-align: justify;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Sección de valores */
+.valores {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.valor-item {
+  width: 30%;
+}
+
+.valor-item img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.valor-item h3 {
+  margin-top: 5px;
+  color: #333;
+}
+
+.valor-item p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .valores {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .valor-item {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}

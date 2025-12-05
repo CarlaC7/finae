@@ -1,0 +1,64 @@
+/* Contenedor principal del footer */
+.footer-container {
+  background: #5C4033;   /* azul oscuro elegante */
+  color: #e2e8f0;        /* gris claro */
+  padding: 40px 20px;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Secciones superiores */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.footer-section {
+  width: 30%;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  color: #2f0505; /* celeste bonito */
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Redes sociales*/
+.social-icons a img {
+  width: 20px;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* Parte inferior */
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #5C4033;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+}

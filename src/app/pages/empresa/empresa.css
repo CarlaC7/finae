@@ -1,0 +1,82 @@
+/* Contenedor general */
+.empresa-container {
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Encabezado */
+.empresa-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.empresa-header h1 {
+  font-size: 2.5rem;
+  color: #353602;
+}
+
+.empresa-header p {
+  font-size: 1.1rem;
+  color: #2f0909;
+}
+
+/* Descripción de la empresa */
+.empresa-descripcion {
+  background: #f1f5f9;
+  padding: 20px 25px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+.empresa-descripcion p {
+  font-size: 1.1rem;
+  color: #676262;
+  line-height: 1.6;
+}
+
+/* Tarjetas de misión, visión, valores */
+.empresa-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  flex: 1;
+  min-width: 260px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h3 {
+  color: #862b0d;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin: 5px 0;
+  color: #afa37b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .empresa-cards {
+    flex-direction: column;
+  }
+}
